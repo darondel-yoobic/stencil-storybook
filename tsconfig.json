@@ -11,8 +11,9 @@
     "moduleResolution": "node",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "resolveJsonModule": true,
     "target": "es2017"
   },
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules", "src/**/*.stories.tsx"],
   "include": ["src"]
 }
