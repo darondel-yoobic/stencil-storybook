@@ -14,7 +14,7 @@
     "lint:style:fix": "stylelint --fix **/*.{css,scss}",
     "prepare": "husky install",
     "stencil": "stencil build --watch",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "storybook dev -p 6006",
     "test": "stencil test --spec",
     "test:watch": "stencil test --spec --watchAll"
   },
@@ -22,11 +22,14 @@
     "@stencil/core": "3.2.0"
   },
   "devDependencies": {
+    "@babel/preset-env": "7.21.4",
+    "@babel/preset-typescript": "7.21.4",
     "@commitlint/cli": "17.5.1",
     "@commitlint/config-conventional": "17.4.4",
     "@stencil/sass": "3.0.0",
-    "@storybook/addon-essentials": "6.5.16",
-    "@storybook/html": "6.5.16",
+    "@storybook/addon-essentials": "7.0.2",
+    "@storybook/html": "7.0.2",
+    "@storybook/html-webpack5": "7.0.2",
     "@types/jest": "27.0.3",
     "@typescript-eslint/eslint-plugin": "5.57.1",
     "@typescript-eslint/parser": "5.57.1",
@@ -40,6 +43,9 @@
     "jest-cli": "27.4.5",
     "lint-staged": "13.2.1",
     "prettier": "2.8.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "storybook": "7.0.2",
     "stylelint": "15.4.0",
     "stylelint-config-standard-scss": "7.0.1",
     "typescript": "5.0.4"
