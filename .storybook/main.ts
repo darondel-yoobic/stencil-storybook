@@ -1,9 +1,9 @@
-import type { StorybookConfig } from '@storybook/html-webpack5';
+import type { StorybookConfig } from '@storybook/html-vite';
 
 const config: StorybookConfig = {
   addons: ['@storybook/addon-essentials'],
   docs: { autodocs: true },
-  framework: '@storybook/html-webpack5',
+  framework: '@storybook/html-vite',
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)']
 };
 
